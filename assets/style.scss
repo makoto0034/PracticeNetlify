@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    height: 150px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    ul{
+        display: flex;
+
+        li{
+            list-style: none;
+            margin-left: 15px;
+        }
+    }
+}
+
+main{
+    width: 100%;
+    background-image: url('img/background.jpg');
+    height: 800px;
+    position: relative;
+    .title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+}
+
+footer{
+    text-align: center;
+}
