@@ -43,7 +43,50 @@ main .title {
           transform: translate(-50%, -50%);
 }
 
+main .title h1 {
+  position: relative;
+  left: 60px;
+}
+
+main .title h1::before {
+  -webkit-animation: ScaleCircle 1s cubic-bezier(0.44, 0.18, 0.14, 1.6) infinite;
+          animation: ScaleCircle 1s cubic-bezier(0.44, 0.18, 0.14, 1.6) infinite;
+  position: absolute;
+  top: 0px;
+  left: -60px;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #4a4ce6d5;
+  border-radius: 50px;
+  -webkit-filter: blur(5px);
+          filter: blur(5px);
+}
+
 footer {
   text-align: center;
+}
+
+@-webkit-keyframes ScaleCircle {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
+}
+
+@keyframes ScaleCircle {
+  from {
+    -webkit-transform: scale(0.1);
+            transform: scale(0.1);
+  }
+  to {
+    -webkit-transform: scale(0.7);
+            transform: scale(0.7);
+  }
 }
 /*# sourceMappingURL=style.css.map */
